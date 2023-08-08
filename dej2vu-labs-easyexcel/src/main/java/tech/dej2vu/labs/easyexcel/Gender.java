@@ -2,10 +2,13 @@ package tech.dej2vu.labs.easyexcel;
 
 import lombok.Getter;
 
-import java.lang.constant.DynamicConstantDesc;
 import java.util.Arrays;
 import java.util.Objects;
 
+/**
+ * @author dej2vu
+ * @date 2023/08/07
+ */
 @Getter
 public enum Gender {
     MALE("男"),

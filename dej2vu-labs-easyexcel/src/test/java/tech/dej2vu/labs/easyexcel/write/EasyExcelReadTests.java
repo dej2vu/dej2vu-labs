@@ -5,13 +5,17 @@ import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import org.springframework.core.io.ClassPathResource;
-import tech.dej2vu.labs.easyexcel.User;
+import tech.dej2vu.labs.easyexcel.Player;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * @author dej2vu
+ * @date 2023/08/07
+ */
 @Log4j2
 public class EasyExcelReadTests {
 
@@ -33,8 +37,8 @@ public class EasyExcelReadTests {
 
 
         log.info("Start read to List<User>...");
-        List<User> users = EasyExcel.read(file).head(User.class).sheet().doReadSync();
-        users.forEach(log::info);
+        List<Player> players = EasyExcel.read(file).head(Player.class).sheet().doReadSync();
+        players.forEach(log::info);
         log.info("End read to List<User>...");
     }
 }

@@ -2,18 +2,20 @@ package tech.dej2vu.labs.easyexcel;
 
 
 import com.alibaba.excel.annotation.ExcelProperty;
-import com.alibaba.excel.annotation.format.DateTimeFormat;
-import jdk.jfr.Experimental;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
+/**
+ * @author dej2vu
+ * @date 2023/08/07
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class Player {
 
     @ExcelProperty(value = "昵称")
     private String username;

@@ -1,5 +1,5 @@
 rootProject.name = "dej2vu-labs"
-include("dej2vu-labs-easyexcel")
+include("dej2vu-labs-easyexcel", "dej2vu-labs-stream")
 
 dependencyResolutionManagement {
     versionCatalogs {
