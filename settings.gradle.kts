@@ -8,3 +8,4 @@ dependencyResolutionManagement {
         }
     }
 }
+include("dej2vu-test-spring-boot-starter")
